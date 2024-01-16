@@ -3,4 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(12, 11, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBarLink {
+  color: aliceblue;
 }
