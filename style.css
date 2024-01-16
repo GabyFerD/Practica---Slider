@@ -22,8 +22,9 @@ main {
 
 .slider {
   position: relative;
-
-  /* para posicionar todas las <li> en cualquier lugar, con position absolute, su elemento padre tiene que ser Relative */
+  /* border: 2px solid blue; */
+  /* para posicionar todas las <li> en cualquier lugar, con position absolute, su elemento padre tiene que ser Relative.
+  No se le da width ni height para que este no ocupe lugar.*/
 }
 
 .slider li {
@@ -41,4 +42,20 @@ main {
   opacity: 1;
 
   /* la opacidad es para mostrar o no un elemento */
+}
+
+.navBar {
+  position: relative;
+  top: 150px;
+  width: 600px;
+
+  /* Este se encuentra debajo de la <ul class Slider> - con lo cual al darle anchura se acomoda todo al centro */
+  background: gray;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
