@@ -30,7 +30,6 @@ main {
 .slider li {
   width: 500px;
   height: 300px;
-  background: crimson;
   position: absolute;
   top: -225px;
   left: 50px;
@@ -43,6 +42,9 @@ main {
 
   /* la opacidad es para mostrar o no un elemento */
 }
+
+/* Seudoclase Target --> utilizado para aplicar estilos específicos al elemento que es el objetivo en ese momento.
+*/
 
 .navBar {
   position: relative;
@@ -58,4 +60,20 @@ nav ul {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
+}
+
+#slide1 {
+  background: url(img/slide1.jpg) no-repeat center/cover;
+}
+#slide2 {
+  background: url(img/slide2.jpg) no-repeat center/cover;
+}
+#slide3 {
+  background: url(img/slide3.jpg) no-repeat center/cover;
+}
+#slide4 {
+  background: url(img/slide4.jpg) no-repeat center/cover;
+}
+#slide5 {
+  background: url(img/slide5.jpg) no-repeat center/cover;
 }
