@@ -35,16 +35,19 @@ main {
   left: 50px;
   border-radius: 20px;
   opacity: 0;
-}
 
-.slider li:first-child {
-  opacity: 1;
-
-  /* la opacidad es para mostrar o no un elemento */
+  /* con opacity 0 se ocultan todas las imagenes y por defecto se muestra la primera */
 }
 
 /* Seudoclase Target --> utilizado para aplicar estilos específicos al elemento que es el objetivo en ese momento.
 */
+
+.slider li:target {
+  opacity: 1;
+
+  /* Al poner opacity 1 al target, al hacer click en cada link nos muestra la imagen correspondiente ya que tendran opacitiy 1 */
+  animation: animacion 2s ease alternate;
+}
 
 .navBar {
   position: relative;
@@ -76,4 +79,16 @@ nav ul {
 }
 #slide5 {
   background: url(img/slide5.jpg) no-repeat center/cover;
+}
+
+@keyframes animacion {
+  0% {
+    box-shadow: 0px 0px 25px 5px rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 0px 0px 25px 5px rgba(221, 194, 194, 0.75);
+  }
+  100% {
+    box-shadow: 0px 0px 25px 5px rgba(255, 255, 255, 0);
+  }
 }
